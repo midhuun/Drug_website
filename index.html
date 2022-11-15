@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="gg.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Fredoka+One&family=Josefin+Sans:wght@300&family=Philosopher:wght@700&family=Roboto:wght@100&family=Source+Serif+Pro:wght@300&family=Zen+Antique&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+   
+    <div class="menu-bar">
+      
+      <h1 class="logo">Incognito Drug<span> Reporting</span></h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="">Login <i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu">
+                <ul>
+                  <li ><a class="complainer" href="login/complainer/login.html">Complainer</a></li>
+                  <li><a href="login/narcotics/login.html">Narcotics Dept</a></li>
+                  
+                  <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Login</h1>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                      <button type="submit" class="btn">Login</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+                  <li><a href="login/admin/login.html">Admin</a></li>
+                  <li>
+                </ul>
+              </div>
+        </li>
+        
+        <li><a href="#">Contact us</a></li>
+      </ul>
+     
+    </div>
+
+    <div class="hero">
+      
+      &nbsp;
+    </div>
+  </body>
+</html>
